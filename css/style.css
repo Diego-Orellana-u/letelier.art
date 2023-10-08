@@ -36,11 +36,11 @@
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Roboto", sans-serif;
-  --biggest-font-size: 2.5rem;
+  --biggest-font-size: 3.5rem;
   --h1-font-size: 1.75rem;
-  --h2-font-size: 1.4rem;
-  --h3-font-size: 1.125rem;
-  --normal-font-size: .938rem;
+  --h2-font-size: 1.65rem;
+  --h3-font-size: 1.35rem;
+  --normal-font-size: 1.2rem;
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
 
@@ -55,7 +55,7 @@
   --z-fixed: 100;
 }
 
-/*=============== BASE ===============*/
+/*=============== GENERAL ===============*/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -68,6 +68,7 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
   transition: background-color .4s;
+  overflow-y: hidden;
 }
 
 h1, h2, h3, h4 {
@@ -89,6 +90,20 @@ img {
   height: auto;
 }
 
+.button{
+  border: 0;
+  border-radius: 0.1rem;
+  background: var(--container-color);
+  color: #333;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  text-decoration: none;
+  padding: .5rem .7rem .5rem .7rem;
+  cursor: pointer;
+}
+
+/*=============== NAVIGATION ===============*/
+
 .logo{
   padding-bottom: .75rem;
   width: 14rem;
@@ -101,7 +116,8 @@ img {
   left: 0;
   background-color: var(--body-color);
   z-index: var(--z-fixed);
-  height: 100px;
+  height: var(--header-height);
+  /* box-shadow: 0 1px 13px hsla(0,0%,0%, .62); */
 }
 
 .nav{
@@ -113,13 +129,16 @@ img {
   background-color: white;
 }
 
+/*box-shadow*/
+
 .nav::after{
-  content: '';
+  content: ''; 
   position: absolute;
   width: 100%;
-  bottom: 4px;
+  bottom: 0px;
+  padding-top: 5px;
   z-index: -1;
-  box-shadow: 0 0 10px 1px #000000;
+  box-shadow: 0 2px 7px hsla(0,0%,0%, .2);
 }
 
 .mobile__nav__toggle{
@@ -135,33 +154,71 @@ img {
 }
 
 @media screen and (max-width: 1150px){
-  .nav__menu{
+  .nav__list{
     position: fixed;
     background-color: var(--container-color);
-    top: var(--header-height);
+    top: -220px;
     width: 100%;
-    padding-block: 2rem 2rem;
-    transition: top .4s;
+    padding: 2rem 0rem 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.2rem;
     z-index: -1;
+    transition: transform .2s ease-out;
   }
 }
 
-.nav__list{
-  display: flex;
-  flex-direction: column;
-  row-gap: 2.2rem;
-  padding-left: .5rem;
-  padding-top: .3rem;
+.nav__list[data-visible="true"]{
+  transform: translateY(100%);
+    transition: transform .2s ease-out;
 }
 
 .nav__link{
   position: relative;
   color: var(--black-color-light);
-  font-size: var(--h2-font-size);
+  font-size: 1.45rem;
   font-weight: 500;
 }
 
-.hide__menu{
-  display: none;
+
+/*=============== MAIN ===============*/
+.home__img{
+  width: 100%;
+  padding-top: var(--header-height);
+  height: 20rem;
+  object-fit: cover;
 }
+
+.home__title{
+  color: var(--white-color);
+  font-weight: 600;
+  font-size:var(--biggest-font-size);
+  margin-top: 3rem;
+}
+
+.home__info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #362613;
+}
+
+.home__p{
+  color: var(--white-color);
+  margin: 1rem 1rem 0rem 1rem;
+  font-size: var(--normal-font-size);
+  font-weight: 300;
+}
+
+.home__btn{
+  margin: 2rem 0rem 3rem 0rem;
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
+
+
+
+
+
 

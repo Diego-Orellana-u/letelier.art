@@ -23,33 +23,38 @@
                 </i>
             </button>
             
-            <div class="nav__menu hide__menu">
-                <ul id="nav-list" class="nav__list">
-                    <li class="nav__list">
+                <ul data-visible="false" class="nav__list" id="nav-list">
+                    <li class="nav__item">
                         <a href="#tienda" class="nav__link">TIENDA</a>
                     </li>
 
-                    <li class="nav__list">
+                    <li class="nav__item">
                         <a href="#vender" class="nav__link">VENDER</a>
                     </li>
 
-                    <li class="nav__list">
+                    <li class="nav__item">
                         <a href="#nosotros" class="nav__link">NOSOTROS</a>
                     </li>
 
-                    <li class="nav__list">
+                    <li class="nav__item">
                         <a href="#contacto" class="nav__link">CONTACTO</a>
                     </li>
                 </ul>
-                
-
-                <!-- Close button -->
-                <!-- <div class="nav__close sr-only" id="nav-close">
-                    <i class="ri-close-line"></i>
-                </div> -->
-            </div>
         </nav>
     </header>
+
+    <!-- MAIN -->
+
+    <main class="main">
+        <section class="home__container">
+            <img src="./img/home__image.jpg" alt="home-image" class="home__img">
+            <section class="home__info">
+                <h2 class="home__title">LUXURY</h2>
+                <p class="home__p">Descubre los ultimos articulos de lujo en el mundo de la decoración</p>
+                <button class="home__btn button" id="home-btn">Go To Luxury</button>
+            </section>
+        </section>
+    </main>
 
     <script src="./js/main.js"></script>
 </body>
