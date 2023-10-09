@@ -38,7 +38,7 @@
   --body-font: "Roboto", sans-serif;
   --biggest-font-size: 3.5rem;
   --h1-font-size: 2rem;
-  --h2-font-size: 1.65rem;
+  --h2-font-size: 1.75rem;
   --h3-font-size: 1.35rem;
   --normal-font-size: 1.2rem;
   --small-font-size: .813rem;
@@ -94,7 +94,7 @@ img {
   border: 0;
   border-radius: 0.1rem;
   background: var(--container-color);
-  color: #333;
+  color: var(--black-color);
   font-size: 1.5rem;
   white-space: nowrap;
   text-decoration: none;
@@ -223,7 +223,6 @@ img {
 .sell__section{
   display: flex;
   flex-direction: column;
-  align-items: left;
   justify-content: center;
   background-color: var(--white-color);
   height: fit-content;
@@ -235,6 +234,7 @@ img {
   font-size: var(--h1-font-size);
   margin: 3rem 0rem 1rem 1rem;
   text-align: left;
+  font-weight: 400;
 
 }
 
@@ -251,8 +251,51 @@ img {
   width: min-content;
   align-self: center;
   color: #333;
-  margin: 2rem 0rem 3rem 0rem;
-  padding-right: 5rem;
-  padding-left: 5rem;
+  margin: 2rem 0rem 2rem 0rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
   border: 4px solid #333;
+}
+
+/*=============== POPULAR ITEMS SECTION ===============*/
+
+.popular__container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.popular__section-title{
+  align-self: center;
+  margin: 2rem 0rem 0rem 0rem;
+  font-size: var(--h2-font-size);
+  font-weight: 400;
+}
+
+.popular__item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 1rem 2rem 1rem;
+}
+
+.popular__img{
+  height: 400px;
+  /* width: 400px; */
+  object-fit: cover;
+}
+
+.popular__item-title{
+  font-size: var(--h3-font-size);
+  margin: 1rem;
+  text-align: center;
+}
+
+.popular__price{
+  margin-bottom: 1rem;
+}
+
+.popular__btn{
+  border: 2px solid #333;
+  padding: 1rem 2rem 1rem 2rem;
 }
