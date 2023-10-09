@@ -37,7 +37,7 @@
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Roboto", sans-serif;
   --biggest-font-size: 3.5rem;
-  --h1-font-size: 1.75rem;
+  --h1-font-size: 2rem;
   --h2-font-size: 1.65rem;
   --h3-font-size: 1.35rem;
   --normal-font-size: 1.2rem;
@@ -68,7 +68,7 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
   transition: background-color .4s;
-  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4 {
@@ -101,6 +101,7 @@ img {
   padding: .5rem .7rem .5rem .7rem;
   cursor: pointer;
 }
+
 
 /*=============== NAVIGATION ===============*/
 
@@ -217,8 +218,41 @@ img {
   padding-left: 5rem;
 }
 
+/*=============== SELL ===============*/
+
+.sell__section{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  background-color: var(--white-color);
+  height: fit-content;
+  padding-bottom: 2rem;
+}
+
+.sell__section-title{
+  color: #333;
+  font-size: var(--h1-font-size);
+  margin: 3rem 0rem 1rem 1rem;
+  text-align: left;
+
+}
+
+.sell__section-desc{
+  color: #333;
+  margin: 1rem 1rem 1rem 1rem;
+  text-align: left;
+  font-size: 1.2rem;
+}
 
 
-
-
-
+.sell__button{
+  background-color: white;
+  width: min-content;
+  align-self: center;
+  color: #333;
+  margin: 2rem 0rem 3rem 0rem;
+  padding-right: 5rem;
+  padding-left: 5rem;
+  border: 4px solid #333;
+}
