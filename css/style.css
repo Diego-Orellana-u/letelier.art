@@ -41,6 +41,7 @@
   --h2-font-size: 1.75rem;
   --h3-font-size: 1.35rem;
   --normal-font-size: 1.2rem;
+  --paragraph-font-size: 1rem;
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
 
@@ -262,12 +263,12 @@ img {
 .popular__container{
   display: flex;
   flex-direction: column;
-  width: 100%;
+  padding-bottom: 1.5rem;
 }
 
 .popular__section-title{
   align-self: center;
-  margin: 2rem 0rem 0rem 0rem;
+  margin-top: 2rem;
   font-size: var(--h2-font-size);
   font-weight: 400;
 }
@@ -276,12 +277,12 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2rem 1rem 2rem 1rem;
+  margin: 2rem .8rem 2rem .8rem;
 }
 
 .popular__img{
   height: 400px;
-  /* width: 400px; */
+  width: 100%;
   object-fit: cover;
 }
 
@@ -296,6 +297,144 @@ img {
 }
 
 .popular__btn{
-  border: 2px solid #333;
+  border: 2px solid #222;
   padding: 1rem 2rem 1rem 2rem;
+}
+
+
+/*=============== WHY US SECTION ===============*/
+
+.whyus__container{
+  padding-bottom: 2.5rem;
+  background-color: #222;
+  display: flex;
+  flex-direction: column;
+}
+
+.whyus__container-title{
+  font-size: var(--h2-font-size);
+  font-weight: 400;
+  color: #FFFFFF;
+  margin: 2rem 0rem 3rem .8rem;
+}
+
+.whyus__reason{
+  padding: 1rem;
+  margin: 0rem .8rem 1rem .8rem;
+  background-color: var(--white-color);
+}
+
+.reason__icon{
+  font-size: 2rem;
+  display: inline-block;
+  margin: 1rem 0rem 1rem 0rem;
+}
+
+.whyus__title{
+  font-size: var(--normal-font-size);
+  font-weight: 500;
+  margin-bottom: .8rem;
+}
+
+.whyus__desc{
+  font-size: var(--paragraph-font-size);
+  margin-bottom: 2rem;
+}
+
+/*=============== POPULAR CATEGORIES SECTION ===============*/
+
+.categories__container{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2.5rem;
+}
+
+.categories__title{
+  align-self: center;
+  text-align: center;
+  font-weight: 400;
+  font-size: var(--h2-font-size);
+  margin-top: 2rem;
+}
+
+.category__individual{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem .8rem 2rem .8rem;
+}
+
+.category__img{
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.category__title{
+  font-size: var(--h3-font-size);
+  margin: 1rem;
+  text-align: center;
+}
+
+.category__btn{
+  border: 2px solid #222;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+/*=============== SOCIAL BAR ===============*/
+
+.social__container{
+  background-color: #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social__title{
+  color: white;
+  font-weight: 400;
+  font-size: var(--h2-font-size);
+  margin: 3rem 0rem 3rem 0rem;
+  text-align: center;
+}
+
+.social__btns-container{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 3rem; 
+  width: 100%; 
+}
+
+.social__btn{
+  background: none;
+  border: none;
+}
+
+.social__icon{
+  font-size: 2.5rem;
+  filter: invert();
+}
+
+/*=============== HOW TO SECTION ===============*/
+.howto__container{
+  height: 250px;
+}
+
+.howto__individual{
+  display: flex;
+  flex-direction: column;
+  background-color: #222;
+  padding: 1.2rem;
+  margin: .5rem .8rem .5rem .8rem;
+  color: white;
+}
+
+.howto__upper-title{
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: .2rem;
+}
+
+.howto__title{
+  font-size: 1.45rem;
 }
