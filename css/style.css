@@ -417,16 +417,29 @@ img {
 
 /*=============== HOW TO SECTION ===============*/
 .howto__container{
-  height: 250px;
+  margin: 2rem .8rem 2rem .8rem;
 }
 
 .howto__individual{
   display: flex;
   flex-direction: column;
-  background-color: #222;
   padding: 1.2rem;
-  margin: .5rem .8rem .5rem .8rem;
   color: white;
+  cursor: pointer;
+}
+
+.first__howto{
+  background-image: url('../img/objects-img/matta.jpg');
+  background-size: cover;
+  box-shadow: inset 0 0 0 50vw rgba(0,0,0,0.5);
+  margin-bottom: .5rem;
+}
+
+.second__howto{
+  background-image: url('../img/objects-img/Matisse.jpg');
+  background-position:top;
+  background-size: cover;
+  box-shadow: inset 0 0 0 50vw rgba(0,0,0,0.5);
 }
 
 .howto__upper-title{
@@ -438,3 +451,5 @@ img {
 .howto__title{
   font-size: 1.45rem;
 }
+
+/*=============== FOOTER ===============*/
