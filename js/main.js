@@ -14,3 +14,4 @@ toggleButton.addEventListener('click', () => {
         toggleButton.firstElementChild.classList.replace('ri-close-line','ri-menu-line')
     }
 })
+
